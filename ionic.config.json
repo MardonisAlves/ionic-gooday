@@ -1,0 +1,7 @@
+{
+  "name": "ionic-gooday",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
