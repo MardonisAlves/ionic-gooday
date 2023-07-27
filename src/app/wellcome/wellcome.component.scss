@@ -1,0 +1,31 @@
+.ion-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+    flex-direction: column;
+    color: var(--ion-color-dark);
+}
+
+.ion-button-primary{
+    font-size: 16px;
+    height: 58px;
+    width: 90%;
+}
+
+.ion-button-secundary{
+    font-size: 16px;
+    height: 58px;
+    width: 90%;
+    color: var(--ion-color-dark);
+    --border-color: var(--ion-color-medium-shade);
+}
+
+.img{
+   position: absolute;
+   left: 0px;
+   height: 40px;
+   width: 40px;
+}
+

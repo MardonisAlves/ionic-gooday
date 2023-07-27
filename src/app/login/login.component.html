@@ -1,0 +1,71 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <a href="/well">
+          <ion-icon
+          name="chevron-back-outline" 
+          size="large"  
+          class="icon" 
+          />
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1>Content</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>Acesse com email e senha</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-label class="label">email</ion-label>
+      <ion-input fill="outline" placeholder="Digite sua senha" class="input" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-label class="label">senha</ion-label>
+      <ion-input fill="outline" placeholder="Digite sua senha" class="input" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+        <ion-checkbox class="checkbox">Lembrar senha</ion-checkbox>
+    </ion-col>
+    <ion-col>
+        <p>Esquecie senha</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button class="button-primary">Acessar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button [href]="['/viva']"  fill="outline" class="button-secondary">Cadastro</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="opnal">
+      <p>Outras opções</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="other">
+      <ion-img
+      class="img"
+      src="assets/icon/Google.png"
+      alt="Logo" />
+
+      <ion-img
+      class="img"
+      src="assets/icon/Facebook.png"
+      alt="Logo" />
+    </ion-col>
+  </ion-row>
+</ion-content>
