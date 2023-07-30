@@ -39,6 +39,10 @@ const routes: Routes = [
     loadComponent: () => import('./screen/genero/genero.component').then( c => c.GeneroComponent)
   },
   {
+    path: 'nascimento',
+    loadComponent: () => import('./screen/screen-data-nascimento/screen-data-nascimento.component').then( c => c.ScreenDataNascimentoComponent)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

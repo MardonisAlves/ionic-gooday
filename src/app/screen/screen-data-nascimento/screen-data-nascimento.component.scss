@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+}
+
+h1{
+    margin-left: 16px;
+}
+
+.button-primary{
+    position: fixed;
+    bottom: 0px;
+    height: 52px;
+    width: 86%;
+}
+
+.input{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    --border-color: transparent;
+    border-radius: 5px;
+    height: 58px;
+    font-size: 16px;
+    color: var(--ion-color-dark);
+    background-color: var(--ion-color-input-background);
+}
+
+.label{
+    margin-left: 16px;
+    font-size: 12px;
+    margin-top: 52px;
+    color: var(--ion-color-dark);
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

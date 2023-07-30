@@ -1,0 +1,24 @@
+<ion-content class="ion-content ion-padding" [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="container">
+          <a href="/name">
+            <ion-icon name="chevron-back-outline" size="large" class="icon" />
+          </a>
+          <h1>Data nascimento ?</h1>
+          <ion-label class="label">data nascimento</ion-label>
+          <ion-input 
+          fill="outline" 
+          placeHolder="12/03/1987" 
+          class="input"
+          />
+        
+          <ion-button 
+          class="button-primary" 
+          [href]="['nascimento']" 
+
+          >Proximo</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
