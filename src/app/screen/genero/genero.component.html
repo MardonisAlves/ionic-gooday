@@ -1,0 +1,29 @@
+<ion-content class="ion-content ion-padding" [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="container">
+          <a href="/name">
+            <ion-icon name="chevron-back-outline" size="large" class="icon" />
+          </a>
+          <h1>Qual seu genero ?</h1>
+          <ion-list  class="list">
+              <ion-select
+              label="Select genero"
+              label-placement="start"
+              fill="solid"
+                interface="alert"
+                toggleIcon="chevron-down-outline"
+                expandedIcon="chevron-up-outline"
+                placeholder="select seu genero"
+              >
+                <ion-select-option value="masculino">Masculino</ion-select-option>
+                <ion-select-option value="feminino">Feminino</ion-select-option>
+                <ion-select-option value="transgenero">Transgenero</ion-select-option>
+                <ion-select-option value="outro genero">Outro genero</ion-select-option>
+              </ion-select>
+          </ion-list>
+          <ion-button class="button-primary" [href]="['genero']" >Proximo</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

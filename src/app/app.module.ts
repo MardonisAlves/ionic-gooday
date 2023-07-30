@@ -6,11 +6,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { WellcomeComponent } from './wellcome/wellcome.component';
-import { LoginComponent } from './login/login.component';
-import { TreineComponent } from './treine/treine.component';
-import { AlimentarComponent } from './alimentar/alimentar.component';
-import { CompatilharComponent } from './compatilhar/compatilhar.component';
+import { WellcomeComponent } from './screen/wellcome/wellcome.component';
+import { LoginComponent } from './screen/login/login.component';
+import { TreineComponent } from './screen/treine/treine.component';
+import { AlimentarComponent } from './screen/alimentar/alimentar.component';
+import { CompatilharComponent } from './screen/compatilhar/compatilhar.component';
+import { NameComponent } from './screen/name/name.component';
+import { GeneroComponent } from './screen/genero/genero.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +24,9 @@ import { CompatilharComponent } from './compatilhar/compatilhar.component';
     LoginComponent, 
     TreineComponent,
     AlimentarComponent,
-    CompatilharComponent
+    CompatilharComponent,
+    NameComponent,
+    GeneroComponent
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
