@@ -1,0 +1,33 @@
+.button-primary{
+    margin-top: 10%;
+    height: 52px;
+    width: 100%;
+}
+
+.button-secondary{
+    margin-top: 10%;
+    height: 52px;
+    width: 100%;
+    --background: var(--ion-color-secondary);
+    color: black;
+}
+
+.button-next{
+    position: fixed;
+    bottom: 0px;
+    height: 52px;
+    width: 86%;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    width: 100%;
+
+    .img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

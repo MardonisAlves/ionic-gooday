@@ -9,7 +9,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "dev": "ionic capacitor run android -l --external",
+    "resources": "cordova-res ios && cordova-res android && node scripts/resources.js",
+    "ionic_cap_sync": "NODE_ENV=--openssl-legacy-provider ionic cap sync",
+    "ionic_build_android": "NODE_ENV=--openssl-legacy-provider ionic cap build android"
   },
   "private": true,
   "dependencies": {
@@ -23,13 +27,17 @@
     "@angular/router": "^16.0.0",
     "@capacitor/android": "^5.2.2",
     "@capacitor/app": "5.0.6",
+    "@capacitor/camera": "^5.0.6",
     "@capacitor/core": "^5.2.2",
+    "@capacitor/filesystem": "^5.1.1",
     "@capacitor/haptics": "5.0.6",
-    "@capacitor/ios": "^5.2.2",
+    "@capacitor/ios": "5.2.2",
     "@capacitor/keyboard": "5.0.6",
+    "@capacitor/preferences": "^5.0.6",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
+    "ngx-logger": "^5.0.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

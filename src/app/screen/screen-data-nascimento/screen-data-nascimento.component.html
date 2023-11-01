@@ -7,17 +7,13 @@
           </a>
           <h1>Data nascimento ?</h1>
           <ion-label class="label">data nascimento</ion-label>
-          <ion-input 
-          fill="outline" 
-          placeHolder="12/03/1987" 
-          class="input"
-          />
+          <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
         
           <ion-button 
           class="button-primary" 
-          [href]="['nascimento']" 
-
+          [href]="['foto']"
           >Proximo</ion-button>
+
         </ion-col>
       </ion-row>
     </ion-grid>

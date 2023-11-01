@@ -1,0 +1,35 @@
+<ion-content class="ion-content ion-padding" [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="container">
+        <a href="/name">
+          <ion-icon name="chevron-back-outline" size="large" class="icon" />
+        </a>
+        <h1>Tirar ou escolher uma foto de teste</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="button-secondary" [href]="['foto']" (click)="selectImage()">Galeria</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="button-primary" [href]="['foto']">Tirar foto 
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col  class="foto">
+        <ion-img 
+        class="img"
+        [src]="img.path"
+        alt="Tirar self">
+        </ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="button-next" [href]="['foto']">Proximo</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

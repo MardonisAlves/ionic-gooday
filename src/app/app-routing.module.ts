@@ -43,6 +43,10 @@ const routes: Routes = [
     loadComponent: () => import('./screen/screen-data-nascimento/screen-data-nascimento.component').then( c => c.ScreenDataNascimentoComponent)
   },
   {
+    path: 'foto',
+    loadChildren: () => import('./screen/tirar-foto/tirar-foto.module').then( m => m.TirarFotoModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

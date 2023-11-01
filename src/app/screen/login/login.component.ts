@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { NGXLogger } from "ngx-logger";
 
 @Component({
   selector: 'app-login',
@@ -10,8 +11,9 @@ import { IonicModule } from '@ionic/angular';
 })
 export class LoginComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private logger: NGXLogger) { }
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.logger.info('oi voce esta debugando o codigo')
+  };
 }
